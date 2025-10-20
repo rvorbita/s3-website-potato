@@ -1,0 +1,149 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff9e6; /* Light, warm background */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #ff9933; /* Sweet potato orange */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Main Content Sections */
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    text-align: center;
+    color: #cc6600; /* Darker orange */
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.highlight {
+    font-weight: 600;
+    color: #b30000; /* Reddish highlight */
+}
+
+/* Card Grid for Facts */
+.card-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    flex-basis: calc(33.333% - 20px);
+    min-width: 280px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #ff9933;
+    margin-bottom: 10px;
+}
+
+/* Recipe List Styling */
+.recipe-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.recipe-item {
+    background-color: #f7e6c9; /* Lighter background for recipes */
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #ff9933;
+}
+
+.recipe-item h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.toggle-details {
+    background-color: #cc6600;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.toggle-details:hover {
+    background-color: #b35900;
+}
+
+.details-list {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 15px;
+    border-top: 1px dashed #cc6600;
+    padding-top: 10px;
+    background-color: #fffaf0;
+    border-radius: 4px;
+}
+
+.details-list li {
+    margin-bottom: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(204, 102, 0, 0), rgba(204, 102, 0, 0.75), rgba(204, 102, 0, 0));
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
